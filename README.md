@@ -1,0 +1,1 @@
+Proyect to practice ArgoCD deployment on a kubernetes cluster using helm
