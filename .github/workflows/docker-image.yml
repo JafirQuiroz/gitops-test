@@ -27,5 +27,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ env.DOCKER_REPO }}/${{ github.sha }}
+          tags: ${{ vars.DOCKER_REPO }}/${{ github.sha }}
   
