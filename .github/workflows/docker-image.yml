@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "dev", "main" ]
 
+
+env:
+  USERNAME: test
+
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -15,7 +19,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: check secrets
-        run: echo ${{ secrets.DOCKER_USERNAME }}
+        run: echo ${{ env.USERNAME }}
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
