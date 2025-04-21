@@ -1,14 +1,15 @@
 name: Update image tag on values.yml file
 
 on:
-   push:
-    branches: [ "dev", "main" ]
+  workflow_run:
+    workflows: ['Build and Push Docker Image to Docker Hub']
+    types:
+      - completed
 
 jobs:
   update_helm_values:
     name: Update Helm values file
     runs-on: ubuntu-latest
-    needs: push_to_registry
 
     steps:
       - name: Checkout code
