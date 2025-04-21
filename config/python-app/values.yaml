@@ -8,7 +8,7 @@ image:
   repository: noequiroz/python-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: f2ce4fd9f52b2f7f4e84f15d0adb1f6714e543b4
+  tag: aaf8acb4db52a73a8bd4837bbeeb989e78875c49
 
 imagePullSecrets: []
 nameOverride: ""
