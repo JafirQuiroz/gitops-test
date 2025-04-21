@@ -1,4 +1,7 @@
-def sayHello():
-    print("Hello")
+from fastapi import FastAPI
 
-sayHello()
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello:" "World"}

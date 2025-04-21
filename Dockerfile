@@ -4,6 +4,7 @@ RUN apt update && apt upgrade -y
 
 WORKDIR /src/app
 
+COPY requirements.txt requirements.txt
 COPY main.py main.py
 
-CMD [ "python3", "main.py" ]
+CMD [ "fastapi", "dev", "main.py" ]
