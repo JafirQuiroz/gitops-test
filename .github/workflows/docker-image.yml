@@ -28,4 +28,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ vars.DOCKER_REPO }}/python-app:${{ github.sha }}
+
   
