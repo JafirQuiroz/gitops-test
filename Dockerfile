@@ -9,6 +9,6 @@ COPY main.py main.py
 
 
 RUN pip install "fastapi[standard]"
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 
-CMD [ "fastapi", "dev", "main.py" ]
+CMD [ "fastapi", "run", "main.py" ]
