@@ -1,6 +1,6 @@
 FROM python:3.12-bullseye
 
-RUN apt update && apt upgrade
+RUN apt update && apt upgrade -y
 
 WORKDIR /src/app
 
