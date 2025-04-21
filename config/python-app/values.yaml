@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: noequiroz
+  repository: noequiroz/python-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: c99c8dd1ea4b47cc3beb3b841af23a150b84e732
